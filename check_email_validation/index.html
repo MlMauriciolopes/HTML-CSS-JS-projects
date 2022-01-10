@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Email Validation JavaScript</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div>
+		<h3>Validação do endereço de Email</h3>
+		<form id="form" action="#">
+			<div class="inputBox">
+				<input type="text" id="email" placeholder="Entre com o endereço de email" onkeyup="validate();">
+				<span class="indicator"></span>
+			</div><!--Class: inputBox-->
+		</form>
+	</div>
+
+	<script type="text/javascript">
+		function validate(){
+			const form = document.getElementById('form');
+			const email = document.getElementById('email').value;
+			const pattern = /^[^ ]+@[^ ]+\.[a-z]{2,3}$/
+
+			if(email.match(pattern)){
+				form.classList.add('valid')
+				form.classList.remove('invalid')
+			}else{
+				form.classList.add('invalid')
+				form.classList.remove('valid')
+			}
+			if (email == "") {
+				form.classList.remove('invalid')
+				form.classList.remove('valid')
+			}
+
+		}
+	</script>
+</html>
+</body>
+<!--Créditos: Online Tutorials - Youtube-->

@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Cocacola Landing Page</title>
+	<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<section>
+		<div class="circle"></div><!--Class: Circle-->
+		<header>
+			<a href="#"><img src="img/logo.png" class="logo"></a>
+			<div class="toggle" onclick="toggleMenu()"></div><!--Class:toggle-->
+			<ul class="navigation">
+				<li><a href="#">Home</a></li>
+				<li><a href="#">Menu</a></li>
+				<li><a href="#">What's New</a></li>
+				<li><a href="#">Contact</a></li>
+			</ul>
+		</header>
+
+		<div class="content">
+			<div class="textBox">
+				<h2>Taste the Feeling</h2>
+				<p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Curabitur fringilla, nulla ut fringilla dapibus, metus purus laoreet libero, sit amet tempus odio ex tempus eros. Aenean ex nunc, laoreet non nunc eget, facilisis tincidunt ligula. Nam sed ullamcorper nibh. In ut ultrices metus. Vestibulum posuere elementum rhoncus.</p>
+				<a href="#">Learn More</a>
+			</div><!--Class:textBox-->
+
+			<div class="imgBox">
+				<div class="swiper-container">
+				 <div class="swiper-wrapper">
+				   <div class="swiper-slide"><img src="img/cocacola1.png"></div><!--Class:swiper-slide-->
+				   <div class="swiper-slide"><img src="img/cocacola2.png"></div><!--Class:swiper-slide-->
+				   <div class="swiper-slide"><img src="img/cocacola3.png"></div><!--Class:swiper-slide-->
+				   <div class="swiper-slide"><img src="img/cocacola4.png"></div><!--Class:swiper-slide-->
+				   <div class="swiper-slide"><img src="img/cocacola5.png"></div><!--Class:swiper-slide-->
+				   <div class="swiper-slide"><img src="img/cocacola6.png"></div><!--Class:swiper-slide-->
+				 </div>
+			</div><!--Class: imgBox-->
+		</div><!--Class:content-->
+		<ul class="sci">
+		 <li><a href="#"><img src="img/facebook.png"></a></li>
+		 <li><a href="#"><img src="img/twitter.png"></a></li>
+		 <li><a href="#"><img src="img/instagram.png"></a></li>
+		</ul>
+	</section>
+	<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+	<script>
+    var swiper = new Swiper('.swiper-container', {
+      effect: 'coverflow',
+      grabCursor: true,
+      centeredSlides: true,
+      slidesPerView: 'auto',
+      coverflowEffect: {
+        rotate: 0,
+        stretch: 0,
+        depth: 200,
+        modifier: 1,
+        slideShadows: true,
+      },
+      pagination: {
+        el: '.swiper-pagination',
+      },
+      loop: true,
+    });
+
+    /* Função para fechar e abrir o menu */
+    function toggleMenu(){
+    	const menuToggle = document.querySelector('.toggle');
+    	const navigation = document.querySelector('.navigation');
+    	menuToggle.classList.toggle('active')
+    	navigation.classList.toggle('active')
+    }
+  </script>
+    <div class="swiper-pagination"></div>
+  </div>
+
+</body>
+</html>
+
+<!--
+
+https://swiperjs.com/get-started/
+<link rel="stylesheet" href="https://unpkg.com/swiper/swiper-bundle.min.css">
+<script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>">
+
+	-->

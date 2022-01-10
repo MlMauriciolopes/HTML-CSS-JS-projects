@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Live Letters Counter</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="container">
+		<h3>Contador de Caracteres </h3>
+		<textarea placeholder="Escreva o seu texto aqui ..." onkeyup="countLetters();"></textarea>
+		<p>Total de caracteres : <span class="count">0</span></p>
+	</div><!--CLass:container-->
+
+	<script type="text/javascript">
+		const textarea = document.querySelector('textarea');
+		const count = document.querySelector('.count');
+
+		function countLetters() {
+			const text = textarea.value;
+			const textLength = textarea.value.length;
+			count.innerText = `${textLength}`;
+		}
+	</script>
+
+</body>
+</html>
+
+<!-- Créditos: Online tutorials - Youtube -->

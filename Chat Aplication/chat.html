@@ -1,0 +1,258 @@
+<!DOCTYPE html>
+<html lang="pt">
+<head>
+	<meta charset="utf-8"/>
+	<title>Chat App</title>
+	<link rel="stylesheet" type="text/css" media="screen" href="style.css"/>
+</head>
+<body>
+
+	<div id="chat-container">
+		<div id="search-container">
+			<input type="text" placeholder="Search"/>
+			
+		</div><!--search-container-->
+		
+		<div id="conversation-list">                           <!--Barra lateral de conversas-->
+			<div class="conversation active">
+				<img src="img/contato.png" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Maurício Lopes
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Oct 10 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Em aula ...
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+			
+			<div class="conversation active">
+				<img src="img/dva.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Joice Oliveira
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Oct 8 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Tô de Bacom a vida !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/elo7.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Fabíola Mendes
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Oct 07 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Estou indo Trabalhar !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/hanzo.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Walmir Alves
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Oct 07 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				TMJ !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/zaria.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Fulano de tal
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Sep 30 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Até mais !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/tracer.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Márcia Lopes
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Sep 25 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Boa Noite !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/contato.png" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				+(55)1192896-3214
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Sep 22 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Tudo vai dar certo, confie ... !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/contato.png" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Empresa Futura
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Set 20 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Seu pagamento está na conta !
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/sombra.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Caah Carvalho
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Set 05 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Se cuida
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/merci.jpg" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				Dona Margareth
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Aug 30 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Tenha um excelente dia 
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+
+			<div class="conversation active">
+				<img src="img/contato.png" alt="" /><!--imagem de rosto -->
+				<div class="title-text">
+				+(55)1198765-3212
+				</div><!--class=title-text-->
+				<div class="created-date">
+				Aug 25 2020
+				</div><!--class=created-date-->
+				<div class="conversation-message">
+				Sumiu ...
+				</div><!--class=conversation-message-->
+			</div><!--conversation-active-->
+		</div><!--conversation-list-->
+
+
+		<div id="new-message-container">
+			<a href="#">+</a>
+			
+		</div><!--new-message-container-->
+
+		<div id="chat-title">                      <!--título do chat-->
+			<span>Fulano de tal</span>
+			<img src="img/lixeira.jpg" width="30px" height="30px" alt="Delete" /> <!--colocar imagem de lixeira svg -->
+			
+		</div><!--chat-title-->
+
+		<div id="chat-message-list">         <!--conversa do chat -->
+			<div class="message-row you-message">
+				<div class="message-content">
+					<div class="message-text">...</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+			</div><!--class=message-row you message-->
+			<div class="message-row other-message">
+				<div class="message-content">
+					<img src="img/contato.png" alt="" />
+					<div class="message-text"> Mas enquanto isso né... Até mais</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+				
+			</div><!--class=message-row other-message-->
+
+			<div class="message-row you-message">
+				<div class="message-content">
+					<div class="message-text"> Também não vejo a hora</div><!--class=message-text-->
+					<div class="message-time">Oct808 </div><!--class=message-time-->
+				</div><!--class=message-content-->
+			</div><!--class=message-row you message-->
+			<div class="message-row other-message">
+				<div class="message-content">
+					<img src="img/contato.png" alt="" />
+					<div class="message-text"> Não vejo a hora de nos formar, e pegar o diploma</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+				
+			</div><!--class=message-row other-message-->
+
+			<div class="message-row you-message">
+				<div class="message-content">
+					<div class="message-text"> joía</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+			</div><!--class=message-row you message-->
+			<div class="message-row other-message">
+				<div class="message-content">
+					<img src="img/contato.png" alt="" />
+					<div class="message-text"> Legal, vou fazer tbm</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+				
+			</div><!--class=message-row other-message-->
+
+			<div class="message-row you-message">
+				<div class="message-content">
+					<div class="message-text"> Só fazendo um projetinho de boa para dar uma treinada.</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+			</div><!--class=message-row you message-->
+			<div class="message-row other-message">
+				<div class="message-content">
+					<img src="img/contato.png" alt="" />
+					<div class="message-text"> Bem tbm... Eae, muito trabalho ??</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+				
+			</div><!--class=message-row other-message-->
+
+			<div class="message-row you-message">
+				<div class="message-content">
+					<div class="message-text"> Bom dia, tudo bem ??</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+			</div><!--class=message-row you message-->
+			<div class="message-row other-message">
+				<div class="message-content">
+					<img src="img/contato.png" alt="" />
+					<div class="message-text"> Bom dia</div><!--class=message-text-->
+					<div class="message-time">Oct 08</div><!--class=message-time-->
+				</div><!--class=message-content-->
+				
+			</div><!--class=message-row other-message-->
+			
+		</div><!--chat-message-list-->
+
+		<div id="chat-form">
+			<img src="img/clips.png" width="30 px" height="30px" alt="Adicionar comentário" />
+			<input type="text" placeholder="type a message" /><!--colocar imagem de clipe de papel svg -->
+		</div><!--chat-form-->
+	</div><!--chat-container-->
+
+</body>
+</html>	

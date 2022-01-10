@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Gerador de senha aleatório com função copiar</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+	<div class="inputBox">
+		<h2>APP Gerador de senhas</h2>
+		<input type="text" name="" placeholder="Create Password" id="password" readonly="">
+
+		<img src="img/copy.png" class="copy" onclick="copyPassword();"> <!--Imagem de CTRL+C-->
+
+		<div id="btn" onclick="getPassword();">Gerar senha</div><!--id=btn-->
+	</div><!--class=inputBox-->
+
+	<div class="alertBox"></div> <!--Class=alertBox-->
+
+	<script type="text/javascript">
+		var alertBox = document.querySelector('.alertBox')
+		function getPassword() {
+				
+				var chars = "0123456789abcdefghijklmnopqrstuvwxyzABCDEFGHIJKLMNOPQRSTUVWXYZ!@#$%^&()_+?><:{}[]";
+				var passwordLength = 16;
+				var password = "";
+
+				for (var i=0; i<passwordLength; i++){
+					var randomNumber = Math.floor(Math.random() * chars.length);
+					password += chars.substring(randomNumber,randomNumber+1);
+				}
+				document.getElementById("password").value = password ; 
+				alertBox.innerHTML = "Nova senha copiada: <br>" + password;
+			}	
+
+			function copyPassword(){
+				var copyPassText = document.getElementById("password");
+				copyPassText.select();
+				copyPassText.setSelectionRange(0,9999);
+				document.execCommand("copy");
+				alertBox.classList.toggle('active');
+				setTimeout(function(){
+					alertBox.classList.toggle('active');
+				},5000)
+			}
+	</script>
+
+</body>
+</html>
+
+<!--
+	
+	0123456789
+	abcdefghijklmnopqrstuvwxyz
+	ABCDEFGHIJKLMNOPQRSTUVWXYZ
+	!@#$%^&()_+?><:{}[]
+
+-->
+
+<!--Créditos:Onlinetutorials-Youtube-->

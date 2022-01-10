@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<title>Jogo de dados</title>
+	<link rel="stylesheet" type="text/css" href="style.css">
+</head>
+<body>
+
+	<div class="main">
+		<img src="img/1.png" alt="" id="img">
+		<button id="btn" onclick="anim()">Jogar dado</button>
+	</div>
+
+	<script type="text/javascript">
+	function shuffle(){
+		const img = document.getElementById("img");
+		let randomNumber = Math.floor(Math.random() * 6) + 1;
+		img.setAttribute("src", `img/${randomNumber}.png`);
+	}
+	function anim(){
+		setTimeout(shuffle,500);
+		const img = document.getElementById("img");
+		img.setAttribute("src", "img/dice-anim.gif");
+	}
+	</script>
+</body>
+</html>

@@ -1,0 +1,46 @@
+810287880035  1
+017379811827  2
+182455771376  3
+
+
+kanto (1+1R+1M)
+
+096 drowzee
+122 mr mime  * (R)
+151 Mew (M)
+
+jotho   (2+1M)
+
+170 chinchou
+215 sneasel
+251 celebi (M)
+
+hoen (4+4R+2M)
+
+252 treecko
+311 plusle(vermelho)
+324 torkoal (R)
+357 tropius (R)
+385 Jirachi (M)
+386 deoxys (M)
+
+sinoh (11+1R+2M)
+
+417 pachirisu (R)
+427 bunneary
+442 spiritomb
+447 riolu
+475 Gallade
+479 Rotom
+483 dialga
+484 palkia
+487 giratina
+488 crescelia
+491 darkrai (M)
+494 Victini (M)
+
+unova
+
+495 snivy
+
+

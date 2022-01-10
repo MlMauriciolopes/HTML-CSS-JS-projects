@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<link rel="stylesheet" type="text/css" href="style.css">
+	<title>Gerador de QR Code</title>
+</head>
+<body>
+
+	<div class="main">
+		<h1>Digite para gerar o QR Code</h1>
+		<input type="text" name="" id="input" autocomplete="off"/>
+		<button type="submit" onclick="func()" id="submit">
+			Gerar QR
+		</button>
+		<img src="" alt="" id="img">
+	</div><!--Class: main-->
+
+	<script type="text/javascript">
+		
+		function func(){
+			var x = document.getElementById("input").value;
+			var url = `https://api.qrserver.com/v1/create-qr-code/?size150x150&data=${x}`;
+
+			var img = document.getElementById("img");
+
+			img.src = url;
+		}
+
+	</script>
+
+</body>
+</html>
+
+<!--Créditos:@coding_gyan instagram-->
